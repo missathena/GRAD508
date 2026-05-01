@@ -65,7 +65,7 @@ gdp_data.drop(columns=['Supplements to wages and salaries',
                        'Proprietors\' income with inventory valuation and capital consumption adjustments'],
               inplace=True)
 
-gdp_data.to_csv("GDP_Merged_Dataset.csv")
+gdp_data.to_csv("GDP_Merged_Dataset_transformed.csv")
 
 # train data and test data split
 gdp_data['prediction_target'] = gdp_data['Personal consumption expenditures Year Over Year'].shift(-1)
