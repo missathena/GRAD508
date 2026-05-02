@@ -8,7 +8,6 @@ from sklearn.metrics import mean_squared_error, r2_score, explained_variance_sco
 from sklearn.tree import plot_tree
 
 gdp_data = pd.read_excel("GDP_Merged_Dataset.xlsx", sheet_name="Merged Data")
-gdp_data = DataFrame(data=gdp_data)
 
 # creating year over year ratios and others
 convert_col = ['Personal income', 'Wages and salaries', 'Compensation of employees', 'Gross domestic product',
